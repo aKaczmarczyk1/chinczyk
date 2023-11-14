@@ -7,6 +7,9 @@ using std::cin;
 using std::endl;
 using std::string;
 
+/*
+    fragment klasy ChatTekstowy
+*/
 class ChatTekstowy{
 
     public:
@@ -46,7 +49,7 @@ class Gra{
     public:
         int ilosc_graczy;  
         int ile_w_bazie;                            // ilosc wszystkich graczy na serwerze (np. host moze chciec zagrac tylko i wylacznie z jednym przeciwnikiem)
-        std::vector<Przeciwnik*> Gracze; // dwuwymiarowa tablica przyjmująca postać arr[][] = {nazwa1, kolor1, lokacja1}, {nazwa2, kolor2, lokacja2} itd
+        std::vector<Przeciwnik*> przeciwnicy; // dwuwymiarowa tablica przyjmująca postać arr[][] = {nazwa1, kolor1, lokacja1}, {nazwa2, kolor2, lokacja2} itd
         int RzucKostka();
         int PobierzLokalizacjePionka(string lokalizacja); // specjalna funkcja ktora zwraca int dla pola Przeciwnik.lokalizacja_gracza przy podaniu lokalizacji zaszyfrowanej jako string (funkcja zamienia to na int)
 };
@@ -69,9 +72,9 @@ class Komputer : Przeciwnik{
         
         for(int i = 0; i < lGraczy; i++){
             if(!czyKolizja){
-                if(obecnaGra.Gracze[i]->nazwa == this->nazwa) //kompilator zgłasza w tym miejscu błąd ponieważ nie wie, że element [przedział 0-lGraczy][0] będzie stringiem
+                if(obecnaGra.przeciwnicy[i]->nazwa == this->nazwa) //kompilator zgłasza w tym miejscu błąd ponieważ nie wie, że element [przedział 0-lGraczy][0] będzie stringiem
                     continue;
-                if(obecnaGra.Gracze[i]->lokacja_gracza == this->lokacja_gracza){
+                if(obecnaGra.przeciwnicy[i]->lokacja_gracza == this->lokacja_gracza){
                     czyKolizja = true;
                     indeksBitegoGracza = i;
                 }
@@ -79,7 +82,7 @@ class Komputer : Przeciwnik{
             if(czyKolizja){
                 int los = rand()%(trudnosc+1);
                 if(los==1){
-                    obecnaGra.Gracze[indeksBitegoGracza]->lokacja_gracza = 0;
+                    obecnaGra.przeciwnicy[indeksBitegoGracza]->lokacja_gracza = 0;
                     chat.WyslijWiadomosc(this->nazwa + ": Haha!\n");
                     return true;
                 }
