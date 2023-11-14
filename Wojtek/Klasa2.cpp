@@ -72,7 +72,7 @@ class Komputer : Przeciwnik{
         
         for(int i = 0; i < lGraczy; i++){
             if(!czyKolizja){
-                if(obecnaGra.przeciwnicy[i]->nazwa == this->nazwa) //kompilator zgłasza w tym miejscu błąd ponieważ nie wie, że element [przedział 0-lGraczy][0] będzie stringiem
+                if(obecnaGra.przeciwnicy[i]->nazwa == this->nazwa) 
                     continue;
                 if(obecnaGra.przeciwnicy[i]->lokacja_gracza == this->lokacja_gracza){
                     czyKolizja = true;

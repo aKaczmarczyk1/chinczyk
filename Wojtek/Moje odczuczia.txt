@@ -1,0 +1,2 @@
+Według mnie implementacja kodu na podstawie diagramu klas jest znacznie łatwiejsza niż w przypadku pisania go dla diagramu
+aktywności. Mimo wszystko, bardzo ciężko jest utworzyć idealny diagram klas gdzie wszystkie zależności będą idealnie napisane, patrząc na fakt że wiele funkcjonalności i połączeń międzyklasowych nasunęło się dopiero na etapie implementacji programu.
