@@ -1,0 +1,5 @@
+1. Sprawdz czy w lobby (komunikat if lobby)(Klasa lobby, referencja do Gra)
+2. Potwierdz że w lobby (komunikat zwrotny)
+3. Wybierz kolor pionka z puli dostępnych kolorów (Klasa kolor)
+4. Wyślij komunikat sprawdzający czy kolor nie jest już zajęte
+5. (alt) Jeśli niezajęte - zatwierdź, w przeciwnym wypadku wyślij komunikat do Klasy Serwer aby umożlikowić ponowne wybranie kolorów (w sumie to loop)
