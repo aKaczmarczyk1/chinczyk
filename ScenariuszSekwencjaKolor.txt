@@ -3,3 +3,8 @@
 3. Wybierz kolor pionka z puli dostępnych kolorów (Klasa kolor)
 4. Wyślij komunikat sprawdzający czy kolor nie jest już zajęte
 5. (alt) Jeśli niezajęte - zatwierdź, w przeciwnym wypadku wyślij komunikat do Klasy Serwer aby umożlikowić ponowne wybranie kolorów (w sumie to loop)
+
+gra z komputerem
+1. Get rodzaj gry
+2. Dobierz poziom przeciwnikow
+3. Wyslij informacje do serwera o rozpoczeciu gry
