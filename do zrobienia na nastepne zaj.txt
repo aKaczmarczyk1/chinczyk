@@ -1,2 +1,0 @@
-każdy ma wziac jedna klase z diagramu klas (uzupełnionego) i napisac tą klase (kod) - (zaimplementować funkcje, metody)
-podac odczucia i roznice pomiedzy pisanie z diagramu aktywnosci a z diagramu klas

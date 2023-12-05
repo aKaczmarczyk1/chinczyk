@@ -1,7 +1,0 @@
-Znacznie łatwiej i przyjemniej tworzyło się kod na podstawie diagramu klas niż na podstawie diagramu aktywności.
-
-Diagram aktywności przedstawiał jedynie wycinek całego systemu, opis działania tylko jednej klasy. Był on bardziej wyszczególniony, ponieważ wskazywał na dokładne działanie danych fynkcji. Mimo to nieznajomość atrybutów i metod pozostałych klas spowodowała, że trudniej było pisać kod na podstawie diagramu aktywności.
-
-Natomiast w diagramie klas wszystkie klasy, ich atrybuty, metody i połączenia między nimi były już ustalone, co znacznie w pomogło tworzyć daną klasę. W trakcie pisania udało się nanieść pare poprawek na diagram klas, niezbędnych do implementacji. Dużo nowych pomysłów przychodzi do głowy dopiero w trakckie pisania kodu, więc nie da się stworzyć idealnego diagramu "od ręki". 
-
-Podsumowując, w większych projektach lepiej jest używać diagramu klas, ponieważ daje on podgląd na całą funkcjonalność systemu.

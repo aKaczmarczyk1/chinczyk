@@ -1,0 +1,27 @@
+udokumentowac zmiany za pomocą grasp
+
+1. gra i serwer wypełniają swoją funkcje, wykonują wiekszość funkcjonalości, są do tego przystosowane
+
+2. wiadomosc i chat tekstowy, chat agreguje wiadomosc, w chacie tworzy się wiadomosc
+
+3. mamy serwer, ktory zarzadza wszystkimi potrzebnymi danymi
+
+4. niskie sprzezenie nie spelniamy - mamy dziedziczenie 
+
+5. nasze klasy mają konkretne przypisane zadania
+
+	ZMIANA: dodana metoda Wyluskaj do klasy OdbierzZSerwera, ktora w zaleznosci od 	podanych argumentow funkcja rozpoznaje który wariant ma się wykonać
+
+6. polimorfizm - nie mamy metod do podobnych do siebie, które moglibyśmy nazwać tak samo
+
+	ZMIANA: w klasie przeciwnik zmiana nazwy metody NapiszNaChacie na WyslijWiadomosc, 	taka metoda jest też w klasie ChatTekstowy == POLIMORFIZM
+	
+
+7. nie mamy żadnych klas abstrakcyjnych czy wymyślonych
+
+8. mamy indirection - funkcja wyslij na serwer,
+	ZMIANA: zmieniliśmy połączenie zależności z serwerem, klasy WyslijNaSerwer i 	OdbierzZSerwera uzależniliśmy od klas ChatTekstowy i Przeciwnik 
+
+9. mamy za dużo public, 
+
+	ZMIANY: ZMIENIC POLA PUBLICZNE NA PRYWATNE
