@@ -1,0 +1,8 @@
+﻿  UnitTest1.cpp
+C:\Users\Wojtek\Desktop\STUDIA\SEMESTR 3\Inżynieria Oprogramowania\chinczyk\Testy_jednostkowe\Testy_jednostkowe.cpp(16,15): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\Wojtek\Desktop\STUDIA\SEMESTR 3\Inżynieria Oprogramowania\chinczyk\Testy_jednostkowe\Testy_jednostkowe.cpp(26,37): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Wojtek\Desktop\STUDIA\SEMESTR 3\Inżynieria Oprogramowania\chinczyk\Testy_jednostkowe\Testy_jednostkowe.cpp(28,36): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Wojtek\Desktop\STUDIA\SEMESTR 3\Inżynieria Oprogramowania\chinczyk\Testy_jednostkowe\Testy_jednostkowe.cpp(33,41): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Wojtek\Desktop\STUDIA\SEMESTR 3\Inżynieria Oprogramowania\chinczyk\Testy_jednostkowe\Testy_jednostkowe.cpp(34,15): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Wojtek\Desktop\STUDIA\SEMESTR 3\Inżynieria Oprogramowania\chinczyk\Testy_jednostkowe\Testy_jednostkowe.cpp(43,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  UnitTest1.vcxproj -> C:\Users\Wojtek\Desktop\STUDIA\SEMESTR 3\Inżynieria Oprogramowania\chinczyk\Testy_jednostkowe\x64\Debug\UnitTest1.dll
