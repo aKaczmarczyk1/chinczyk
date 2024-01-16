@@ -71,20 +71,36 @@ private:
     Gracz gracz;
 
 public:
-    GraczBuilder& zbudujKolorPionka(Serwer s) {
+    virtual ~GraczBuilder (){}
+    virtual void zbudujKolorPionka(Serwer s) const = 0;
+    virtual void zbudujZPodanaNazwa(Serwer s, string nazwa) const = 0;
+    virtual void pobierzGracza() const = 0;
+    
+
+    void zbudujKolorPionka(Serwer s) const override {
         // wybor koloru pionka
-        return *this;
     }
 
-    GraczBuilder& zbudujZPodanaNazwa(Serwer s, string nazwa) {
+    void zbudujZPodanaNazwa(Serwer s, string nazwa) const override {
         // budowa obiektu Gracz z podaną nazwą
-        return *this;
     }
 
-    Gracz pobierzGracza() {
-        return gracz;
+    void pobierzGracza() const override {
     }
 };
+
+class Director {
+private:
+    GraczBuilder* builder;
+public:
+    void setBuilder(GraczBuilder* b) {
+        this->builder = b;
+    }
+    void buildPrzeciwnik() {
+        this->builder->zbudujKolorPionka();
+    }
+};
+
 
 int main() {
     // Przykładowe użycie budowniczego

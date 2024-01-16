@@ -57,11 +57,3 @@
 		}
 	};
 
-
-	//dodac moze licznik do chatu,
-	//czy zwracane typy s¹ ok? wiadomosc zamiast chatu?
-	//przeciwnik polaczony z serwerem zaleznoscia?
-	//podaj nazwê???
-	//metoda czynazwazajeta w serwerze?
-
-	//gowno, jeszcze trzeba pozmieniac troche ale mi sie nie chce
